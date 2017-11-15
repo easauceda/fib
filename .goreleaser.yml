@@ -7,4 +7,4 @@ builds:
 brew:
   github:
     owner: easauceda
-    name: taps
+    name: homebrew-apps
