@@ -1,0 +1,11 @@
+sudo: required
+services:
+  - docker
+language: go
+script:
+  - go build -o fib
+deploy:
+  provider: script
+  script: curl -sL https://git.io/goreleaser | bash
+  on:
+    tags: true
